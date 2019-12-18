@@ -117,7 +117,7 @@ h4 {
 	padding-bottom: 150px;
 }
 .ourAgency-title {
-	width: 255px;
+	width: 20%;
 }
 .ourAgency-title > .section-name, .ourAgency-title > .section-title{
 	text-align: left;
@@ -140,24 +140,26 @@ h4 {
 }
 .futureTrip-list {
 	position: absolute;
-	top: -120px;
-	right: 70px;
-	max-width: 1200px;
+	top: -100px;
+	right: 50px;
+	max-width: 78%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
 }
 .futureTrip-block {
-	width: 370px;
-	height: 520px;
+	width: 30%;
+	height: auto;
 	border: 1px solid #d6d6d6;
 	border-radius: 3px;
 	margin: 10px;
 	text-align: center;
 }
 .futureTrip-block__image {
-	width: 370px;
-	height: 400px;
+	width: 100%;
+	height: auto;
 }
 .futureTrip-block__name {
 	font-family: 'Montserrat', sans-serif;
@@ -258,9 +260,9 @@ h4 {
 .tour-packege-block {
 	position: relative;
 	padding: 385px 15px 15px 15px;
-	width: 370px;
+	width: 350px;
 	height: 585px;
-	margin: 15px auto;
+	margin: 10px auto;
 	background-color: #fff;
 	border-radius: 5px;
 }
@@ -268,8 +270,8 @@ h4 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 370px;
-	height: 370px;
+	width: 350px;
+	height: 350px;
 }
 .tour-packege-list {
 	max-width: 1920px;
@@ -333,7 +335,7 @@ h4 {
 }
 .tour-packege__raiting {
 	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 30px;
 	font-weight: 600;
 	color: #000;
@@ -352,8 +354,8 @@ h4 {
 	text-decoration: none;
 	position: absolute;
 	box-sizing: border-box;
-	bottom: 15px;
-	right: 15px;
+	bottom: 7px;
+	right: 9px;
 	line-height: 12px;
 
 }
@@ -630,7 +632,8 @@ h4 {
 }
 .download-button-list {
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
@@ -841,12 +844,14 @@ footer {
 	max-width: 20%;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
 	h3 {padding-top: 20px;}
-	.futureTrip-list {position: unset; max-width: 800px;justify-content: center;
-    flex-direction: column;}
     .ourAgency-title { width: 90%;}
+    .futureTrip-list { position: unset; justify-content: center; flex-direction: column; max-width: 90%;}
     .futureTrip-block {margin: 10px auto;}
+    .slider { max-width: 700px;}
+    .Bestcare-list {justify-content: center;}
+    .Bestcare-block { max-width: 90%; margin: 10px auto; padding: 15px;}
     .section-name { padding-top: 70px;}
 	.section-title {padding-bottom: 40px;}
 	footer {padding-top: 40px; padding-bottom: 30px; justify-content: center; flex-wrap: wrap;}
@@ -864,14 +869,27 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	.futureTrip-list { flex-wrap: wrap; }
 	.slider { max-width: 800px;}
+	.futureTrip-block {margin: 10px auto; width: 350px;}
+	.Bestcare-list {justify-content: center;}
+	.Bestcare-block { max-width: 90%; margin: 15px auto; padding: 20px;}
+	.futureTrip-list {
+    position: unset;
+    top: 0;
+    right: 0;
+     flex-direction: column;
+    justify-content: center;
+    max-width: 90%;}
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 1001px)  {
 	.ourAgency-title { width: 90%;}
     .section-name { padding-top: 70px;}
 	.section-title {padding-bottom: 40px;}
-    .futureTrip-list { position: unset; justify-content: center;}
+	.ourAgency-title { width: 90%};
+    .futureTrip-list { position: unset; justify-content: center; max-width: 90%;}
+}
+
+@media only screen and (min-width: 1002px) and (max-width: 1300px) {
+	 .futureTrip-list { position: absolute; top: 0; right: 0; justify-content: center; max-width: 78%;}
+
 }
