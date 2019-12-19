@@ -51,6 +51,56 @@ body {
 	justify-content: flex-end;
 	flex-wrap: wrap;
 }
+/*hambuger*/
+
+/* Style the menu link */
+.js .nav .skip {
+  overflow: hidden;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+}
+/* Give the .nav ul a height when it's been opened, i.e. make it show */
+.js .nav ul.open {
+  display: flex;
+  flex-direction: column;
+}
+.js .nav ul {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  right: 1em;
+  top: 4.5em;
+  transition: max-height 0.25s ease-out;
+}
+.js nav li {
+  text-align: right;
+}
+/* On screens larger than 35em, remove the menu link and display all menu items */
+@media screen and (min-width: 768px) {
+  .js .nav ul {
+    overflow: auto;
+    max-height: inherit; 
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+  .js .nav li {
+    text-align: center;
+    display: inline-block;
+    border-top: 0;
+     }
+  .js .nav li:last-child {
+    border: 0;
+  }
+  .js .nav .skip {
+    display: none;
+    visibility: hidden;
+  }
+}
+/*hambuger end*/
 .nav-bar_item{
 	display: inline-block;
 	margin-left: 30px;
@@ -58,12 +108,15 @@ body {
 .nav-bar_item i {
 	color: #000;
 }
-.nav-bar_item a {
+.nav-bar_item a, .skip {
 	line-height: 34px;
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
+}
+.skip {
+	margin-right: 20px;
 }
 .nav-booknow {
 	margin-left: 30px;
@@ -72,7 +125,7 @@ body {
 	height: 30px;
 	padding: 10px 0;
 	border-radius: 5px;
-	text-align: center;
+	text-align: center !important;
 	color: #fff;
 	background-color: var(--color1);
 	font-family: 'Montserrat', sans-serif;
