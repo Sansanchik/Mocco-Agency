@@ -871,6 +871,18 @@ footer {
 .footer-text {
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
+	margin-bottom: 15px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.footer-tel,.footer-adress, .footer-site {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.footer-tel {
+	text-decoration: none;
 }
 .footer-link a{
 	font-family: 'Poppins', sans-serif;
@@ -924,7 +936,7 @@ footer {
     .subscribe-part { max-width: 90%;}
     .section-name { padding-top: 20px;}
     .message-form input { width: 350px;}
-    .message-form textarea {width: 550px;}
+    .message-form textarea {width: 350px;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
