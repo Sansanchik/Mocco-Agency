@@ -71,7 +71,7 @@ body {
   overflow: hidden;
   position: absolute;
   right: 1em;
-  top: 4.5em;
+  top: 1.5em;
   transition: max-height 0.25s ease-out;
 }
 .js nav li {
@@ -921,6 +921,8 @@ footer {
 @media only screen and (max-width: 767px) {
 	.main {padding-top: 5px; padding-bottom: 25px;}
 	h3 {padding-top: 20px;}
+	h2 { font-size: 29px;}
+	h4 { font-size: 24px}
     .ourAgency-title { width: 95%; margin: 0 auto;}
     .futureTrip-list { position: unset; justify-content: center; flex-direction: column; max-width: 95%;}
     .futureTrip-block {margin: 10px auto; width: 90%;}
