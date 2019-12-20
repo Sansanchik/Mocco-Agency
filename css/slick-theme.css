@@ -78,7 +78,7 @@
 
 .slick-prev
 {
-    left: -15px;
+    left: 0px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,18 +88,18 @@
 .slick-prev:before
 {
      font-family: FontAwesome !important; 
-    content: '\f0d9';
+    content: '◄';
 }
 [dir='rtl'] .slick-prev:before
 {
     font-family: FontAwesome !important; 
-    content: '\f0da';
+    content: '◄';
 }
 
 .slick-next
 {
      font-family: FontAwesome !important; 
-    right: -15px;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {
@@ -109,11 +109,11 @@
 .slick-next:before
 {
      font-family: FontAwesome !important; 
-    content: '\f0da';
+    content: '►';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\f0d9';
+    content: '►';
 }
 
 /* Dots */

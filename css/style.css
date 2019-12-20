@@ -883,6 +883,7 @@ footer {
 }
 .footer-tel {
 	text-decoration: none;
+	color: inherit;
 }
 .footer-link a{
 	font-family: 'Poppins', sans-serif;
@@ -906,37 +907,55 @@ footer {
 .footer-social-item a {
 	text-decoration: none;
 }
-.footer-social-item i {
+.footer-social-item i, .footer-adress i{
 	text-align: left;
 	width: 16px;
 	height: 16px;
 	font-size: 20px;
+	margin-right: 10px;
 }
 .instagram {
 	max-width: 20%;
 }
 
 @media only screen and (max-width: 767px) {
+	.main {padding-top: 5px; padding-bottom: 25px;}
 	h3 {padding-top: 20px;}
-    .ourAgency-title { width: 90%;}
-    .futureTrip-list { position: unset; justify-content: center; flex-direction: column; max-width: 90%;}
-    .futureTrip-block {margin: 10px auto;}
+    .ourAgency-title { width: 95%; margin: 0 auto;}
+    .futureTrip-list { position: unset; justify-content: center; flex-direction: column; max-width: 95%;}
+    .futureTrip-block {margin: 10px auto; width: 90%;}
     .slider { max-width: 700px;}
+    .providePackege {width: 95%; margin: 0 auto;}
+    .providePackege-slide{ height: auto;}
+    .providePackege-text {line-height: 16px;}
+    .worldwide-coutries {max-width: 95%; height: auto; margin: 10px auto;}
+    .worldwide-coutries__img {margin: 10px;}
+    .worldwide-coutries__coutries {font-size: 15px; line-height: 20px;}
+    .worldwide-coutries__continent {font-size: 18px; margin: 11px 0 15px 0;}
+    .statistic {padding: 10px 0;}
+    .latestblog { margin: 0 auto; width: 95%; padding-top: 25px; padding-bottom: 25px;}
+    .partners-list { max-width: 95%; margin: 0px auto 24px auto;}
     .Bestcare-list {justify-content: center;}
     .Bestcare-block { max-width: 90%; margin: 10px auto; padding: 15px;}
     .section-name { padding-top: 70px;}
 	.section-title {padding-bottom: 40px;}
 	footer {padding-top: 40px; padding-bottom: 30px; justify-content: center; flex-wrap: wrap;}
-	.footer-adress {max-width: 60%;}
-	.footer-link a{	max-width: 30%;}
-    .footer-social {max-width: 45%;}
-    .instagram {max-width: 45%;}
+	.footer-title {text-align: center;}
+	.footer-links-list {flex-direction: row; display: flex; flex-wrap: wrap;}
+	.footer-adress { max-width: 95%; margin: 0 auto; text-align: left; padding-bottom: 15px;}
+	.footer-link {margin: 10px;}
+    .footer-social {max-width: 95%;}
+    .footer-social-list {display: flex; flex-wrap: wrap;}
+    .footer-social-item {font-size: 14px; line-height: 20px; margin: 10px;}
+    .instagram {max-width: 95%;}
     .download-img {display: none;}
     .download-block {padding-top: 50px; max-width: 90%;}
     .subscribe-part { max-width: 90%;}
     .section-name { padding-top: 20px;}
     .message-form input { width: 350px;}
     .message-form textarea {width: 350px;}
+    .hero-but {	margin: 0 auto; display: block;}
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
