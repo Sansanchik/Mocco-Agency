@@ -4,12 +4,11 @@
 }
 div, button, section, form, input, textarea {
 	box-sizing: border-box;
-	border: none;
 }
+a, button {border: none;}
 p, a, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
-	border: none;
 }
 body {
 	margin: 0 auto;
